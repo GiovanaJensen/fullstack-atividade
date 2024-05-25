@@ -10,7 +10,7 @@ namespace ProAtividade.API.models
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Descricao { get; set; }
-        public string Propriedade { get; set; }
+        public Prioridade Propriedade { get; set; }
         public Atividade(){}
         public Atividade(int id){
             this.Id = id;
