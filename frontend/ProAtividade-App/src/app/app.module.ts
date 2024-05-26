@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { EventosComponent } from './Eventos/Eventos.component';
 import { PalestrantesComponent } from './Palestrantes/Palestrantes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavComponent } from './nav/nav.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+import {CollapseModule} from "ngx-bootstrap/collapse";
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       EventosComponent,
-      PalestrantesComponent
+      PalestrantesComponent,
+      NavComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot()
   ],
   providers: [
     provideClientHydration()
