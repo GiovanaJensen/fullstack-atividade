@@ -25,7 +25,7 @@ namespace ProAtividade.API.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Propriedade")
+                    b.Property<int>("Prioridade")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Titulo")

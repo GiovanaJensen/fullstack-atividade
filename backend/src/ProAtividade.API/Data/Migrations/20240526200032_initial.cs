@@ -14,7 +14,7 @@ namespace ProAtividade.API.Data.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Titulo = table.Column<string>(type: "TEXT", nullable: false),
                     Descricao = table.Column<string>(type: "TEXT", nullable: false),
-                    Propriedade = table.Column<int>(type: "INTEGER", nullable: false)
+                    Prioridade = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
